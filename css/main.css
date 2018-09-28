@@ -1,0 +1,15 @@
+/*Contents*/
+
+.landing {
+    background: url('../images/bg.jpg') #103d50 70% 30% no-repeat !important;
+    min-height: 500px;
+    padding: 0em 0em;
+}
+
+.transbg{
+    background: rgba(32, 154, 189, 0.655)
+}
+
+.menu {
+    border: 0px!important;
+}

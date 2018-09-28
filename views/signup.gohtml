@@ -1,0 +1,41 @@
+{{define "yeild"}}
+<div class="ui one column grid relaxed container">
+    <div class="column">
+    {{template "signup"}}
+    </div>
+</div>
+{{end}}
+
+
+{{define "signup"}}
+<h2 class="ui teal image header content centered">
+    <img src="images/vin.png" class="image">
+    <div class="content">
+        Log-in
+    </div>
+</h2>
+<form class="ui form">
+    <div class="ui stacked segment">
+        <div class="field">
+            <div class="ui left icon input">
+                <i class="user icon"></i>
+                <input type="text" name="email" placeholder="E-mail address">
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui left icon input">
+                <i class="lock icon"></i>
+                <input type="password" name="password" placeholder="Password">
+            </div>
+        </div>
+        <div class="ui fluid large teal submit button">Signup</div>
+    </div>
+
+    <div class="ui error message"></div>
+
+</form>
+
+<div class="ui message">
+    New to us? <a href="/signup"><div class="ui teal submit button">Signup</div></a>
+</div>
+{{end}}
