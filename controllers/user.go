@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"lock-my-gate/views"
+	"lockyourgate/views"
 	"net/http"
 )
 
