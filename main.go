@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"lockyourgate/controllers"
-	"lockyourgate/views"
+	"github.com/vinchauhan/lockyourgate/controllers"
+	"github.com/vinchauhan/lockyourgate/views"
 	"log"
 	"net/http"
 	"os"

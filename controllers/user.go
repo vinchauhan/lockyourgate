@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"lockyourgate/views"
+	"github.com/vinchauhan/lockyourgate/views"
 	"net/http"
 )
 
