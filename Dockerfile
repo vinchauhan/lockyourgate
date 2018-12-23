@@ -1,10 +1,16 @@
 FROM golang:1.11
 
-RUN mkdir /go/src/app
+RUN mkdir /go/src/github.com
 
-WORKDIR /go/src/app
+RUN mkdir /go/src/github.com/vinchauhan
 
-COPY . /go/src/app
+RUN mkdir /go/src/github.com/vinchauhan/lockyourgate
+
+WORKDIR /go/src/github.com/vinchauhan/lockyourgate
+
+COPY . /go/src/github.com/vinchauhan/lockyourgate
+
+VOLUME $PWD:/go/src/github.com/vinchauhan/lockyourgate
 
 EXPOSE 3000
 
@@ -12,6 +18,6 @@ RUN go get .../.
 
 RUN go build
 
-RUN go run main.go
+CMD [ "lockyourgate" ]
 
 

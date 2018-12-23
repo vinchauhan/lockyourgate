@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/vinchauhan/lockyourgate/controllers"
-	"github.com/vinchauhan/lockyourgate/views"
 	"log"
 	"net/http"
-	"os"
+
+	"github.com/vinchauhan/lockyourgate/controllers"
+	"github.com/vinchauhan/lockyourgate/views"
 
 	"github.com/gorilla/mux"
 )
@@ -33,13 +33,13 @@ func resourceNotFound(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
-	f, err := os.OpenFile("lock-your-gate.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
+	//f, err := os.OpenFile("lock-your-gate.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
 
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer f.Close()
-	log.SetOutput(f)
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	// defer f.Close()
+	// log.SetOutput(f)
 	userC := controllers.NewUser()
 	homeView = views.NewView("semantic", "views/home.gohtml")
 
